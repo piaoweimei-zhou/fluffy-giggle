@@ -50,7 +50,7 @@ function highlightCurrentPage() {
 }
 
 function loadHeadContent() {
-    fetch('/components/head.html')
+    fetch('https://piaoweimei-zhou.github.io/fluffy-giggle/components/head.html')
         .then(response => response.text())
         .then(data => {
             const parser = new DOMParser();
