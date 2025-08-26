@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <script src="/js/load-component.js"></script>
+    <title>视频处理工具 - 智创工坊</title>
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="category-products-page">
+        <h1>视频处理工具</h1>
+        <p class="category-description">高效的视频剪辑、转换、提取工具，让您的视频处理工作事半功倍。</p>
+
+        <div class="product-grid">
+            <!-- 产品卡片 1: 视频智能分镜工具 -->
+            <div class="product-card">
+                <img src="/assets/images/products/video-splitter-thumb.png" alt="视频智能分镜工具缩略图">
+                <h3>视频智能分镜工具</h3>
+                <p>AI加持，智能提取视频关键帧，GUI可视化，GPU加速。</p>
+                <ul>
+                    <li>✅ GPU/CPU 自动切换</li>
+                    <li>✅ 智能多策略分镜</li>
+                    <li>✅ GUI 可视化操作</li>
+                </ul>
+                <a href="/categories/video-tools/product-video-extractor.html" class="product-link">了解详情 & 购买 »</a>
+            </div>
+
+            <!-- 产品卡片 2: 视频格式转换工具 (占位) -->
+            <div class="product-card">
+                <img src="/assets/images/products/video-converter-thumb.png" alt="视频格式转换工具缩略图">
+                <h3>视频格式转换工具</h3>
+                <p>（即将上线）支持多种视频格式互转，批量处理，高质量输出，操作简便。</p>
+                <ul>
+                    <li>✅ 高速转换</li>
+                    <li>✅ 支持主流格式</li>
+                    <li>✅ 批量处理</li>
+                </ul>
+                <a href="#" class="product-link disabled">敬请期待</a>
+            </div>
+
+            <!-- 更多视频处理工具卡片 -->
+        </div>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadComponent('navbar-container', '/components/navbar.html');
+            loadComponent('footer-container', '/components/footer.html');
+        });
+    </script>
+</body>
+</html>

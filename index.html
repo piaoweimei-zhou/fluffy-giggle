@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- load-component.js 会自动加载公共head内容 -->
+    <script src="/js/load-component.js"></script> 
+    <title>飘哥工具箱 - 您的专属AI与效率工具集 | 独立开发者匠心出品</title>
+</head>
+<body>
+    <!-- 导航栏占位符 -->
+    <div id="navbar-container"></div>
+
+    <main>
+        <section class="hero">
+            <h1>一站式电商|自媒体效率工具平台</h1>
+            <p>60+款专业工具，助力您的生意飞速成长</p>
+            <a href="/categories.html" class="cta-button">探索所有工具</a>
+        </section>
+
+        <section class="featured-categories">
+            <h2>热门工具分类</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="/assets/images/icons/video-icon.svg" alt="视频处理">
+                    <h3>视频处理工具</h3>
+                    <p>提取、转换、编辑视频的得力助手</p>
+                    <a href="/categories/video-tools/index.html">查看全部</a>
+                </div>
+                <div class="category-card">
+                    <img src="/assets/images/icons/image-icon.svg" alt="图片设计">
+                    <h3>图片设计工具</h3>
+                    <p>轻松制作高点击率的主图和海报</p>
+                    <a href="/categories/image-tools/index.html">查看全部</a>
+                </div>
+                <!-- 更多分类卡片 -->
+            </div>
+        </section>
+
+        <section class="popular-products">
+            <h2>热门产品推荐</h2>
+            <div class="product-grid">
+                <!-- 实际产品卡片示例 -->
+                <div class="product-card">
+                    <img src="/assets/images/products/video-splitter-thumb.png" alt="视频智能分镜工具缩略图">
+                    <h4>视频智能分镜工具</h4>
+                    <p>AI加持，智能提取视频关键帧，GUI可视化。</p>
+                    <a href="/categories/video-tools/product-video-extractor.html" class="product-link">了解详情</a>
+                </div>
+                <div class="product-card">
+                    <img src="/assets/images/products/image-enhancer-thumb.png" alt="图片智能增强工具缩略图">
+                    <h4>图片智能增强工具</h4>
+                    <p>一键美化图片，去除噪点，提升清晰度。（敬请期待）</p>
+                    <a href="#" class="product-link disabled">敬请期待</a>
+                </div>
+                <!-- 更多热门产品卡片 -->
+            </div>
+        </section>
+
+        <section class="our-advantages">
+            <h2>为何选择智创工坊的工具？</h2>
+            <div class="advantage-grid">
+                <div class="advantage-item">
+                    <h3>🔬 匠心独运的智能算法</h3>
+                    <p>每一款工具都深度融合前沿AI技术，从根本上解决您的痛点，提供超越传统解决方案的智能体验。</p>
+                </div>
+                <div class="advantage-item">
+                    <h3>🚀 极致性能体验</h3>
+                    <p>充分利用硬件优势，GPU/CPU智能适配，确保工具运行流畅高效，让您的任务秒速完成。</p>
+                </div>
+                <div class="advantage-item">
+                    <h3>💡 直观易用的用户界面</h3>
+                    <p>告别复杂的命令行，我们提供图形化操作界面，让您轻松上手，即学即用，专注于创作而非技术细节。</p>
+                </div>
+                <div class="advantage-item">
+                    <h3>🛠️ 稳定可靠的跨平台支持</h3>
+                    <p>提供一键打包的可执行程序，无需繁琐配置Python环境，开箱即用，兼容主流操作系统。</p>
+                </div>
+                <div class="advantage-item">
+                    <h3>👂 持续迭代与用户反馈</h3>
+                    <p>我们珍视每一次用户建议，不断优化和更新产品，力求完美，打造最符合您需求的好工具。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <h2>即刻体验智能，告别低效烦恼！</h2>
+            <a href="/categories.html" class="cta-button">探索所有工具</a>
+            <p>对我们的工具感兴趣？或有定制需求？欢迎随时联系我们！</p>
+            <a href="/contact.html" class="secondary-cta-button">联系我们 →</a>
+        </section>
+    </main>
+
+    <!-- 页脚占位符 -->
+    <div id="footer-container"></div>
+
+    <script>
+        // DOMContentLoaded ensures the containers are available
+        document.addEventListener('DOMContentLoaded', function() {
+            loadComponent('navbar-container', '/components/navbar.html');
+            loadComponent('footer-container', '/components/footer.html');
+        });
+    </script>
+</body>
+</html>

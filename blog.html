@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- load-component.js 会自动加载公共head内容 -->
+    <script src="/js/load-component.js"></script>
+    <title>教程博客 - 智创工坊</title>
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="blog-page">
+        <h1>教程博客</h1>
+        <p class="page-description">在这里，我们将分享各类工具的使用教程、技术干货、行业洞察和产品更新。</p>
+
+        <section class="blog-posts-list">
+            <h2>最新文章</h2>
+            <div class="blog-grid">
+                <!-- 博客文章卡片 1 -->
+                <div class="blog-card">
+                    <img src="/assets/images/blog/post-1-thumb.png" alt="视频智能分镜工具使用教程封面" class="blog-thumb">
+                    <h3><a href="/blog/post-1.html">【视频工具】智能分镜工具深度使用指南：告别手动抽帧！</a></h3>
+                    <p class="blog-summary">详细讲解视频智能分镜工具的各项参数配置，如何精准提取关键帧，以及在影视创作中的应用技巧。</p>
+                    <div class="blog-meta">
+                        <span class="blog-date">2025年8月26日</span>
+                        <span class="blog-category">视频工具</span>
+                    </div>
+                    <a href="/blog/post-1.html" class="read-more-button">阅读全文 →</a>
+                </div>
+
+                <!-- 博客文章卡片 2 -->
+                <div class="blog-card">
+                    <img src="/assets/images/blog/post-2-thumb.png" alt="GitHub Pages引流最佳实践封面" class="blog-thumb">
+                    <h3><a href="/blog/post-2.html">独立开发者：利用GitHub Pages搭建高效引流网站的N个技巧</a></h3>
+                    <p class="blog-summary">分享作为独立开发者，如何利用GitHub Pages搭建多产品引流网站，实现低成本高效率的线上推广。</p>
+                    <div class="blog-meta">
+                        <span class="blog-date">2025年8月26日</span>
+                        <span class="blog-category">独立开发</span>
+                    </div>
+                    <a href="/blog/post-2.html" class="read-more-button">阅读全文 →</a>
+                </div>
+
+                <!-- 博客文章卡片 3 (占位) -->
+                <div class="blog-card">
+                    <img src="/assets/images/blog/post-3-thumb.png" alt="数据分析工具图表封面" class="blog-thumb">
+                    <h3><a href="/blog/post-3.html">【数据工具】如何利用AI辅助数据分析，提升电商运营决策？</a></h3>
+                    <p class="blog-summary">探讨数据分析工具如何结合AI技术，深度挖掘运营数据，为电商商家提供精准决策支持。</p>
+                    <div class="blog-meta">
+                        <span class="blog-date">2025年8月26日</span>
+                        <span class="blog-category">数据分析</span>
+                    </div>
+                    <a href="/blog/post-3.html" class="read-more-button">阅读全文 →</a>
+                </div>
+
+                <!-- 更多博客文章卡片... -->
+            </div>
+        </section>
+
+        
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadComponent('navbar-container', '/components/navbar.html');
+            loadComponent('footer-container', '/components/footer.html');
+        });
+    </script>
+</body>
+</html>

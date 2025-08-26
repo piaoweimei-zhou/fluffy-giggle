@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- load-component.js 会自动加载公共head内容 -->
+    <script src="/js/load-component.js"></script>
+    <title>关于我们 - 飘哥工具箱</title>
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="about-page">
+        <h1>关于飘哥工具箱</h1>
+        <p class="page-description">我们致力于用技术创造价值，为用户提供智能、高效、易用的软件工具。</p>
+
+        <section class="about-section">
+            <h2>谁是飘哥工具箱？</h2>
+            <div class="about-content">
+                <img src="/assets/images/logos/developer-avatar.png" alt="开发者头像" class="developer-avatar">
+                <p>飘哥工具箱由爱分享的飘哥作为独立开发者创立，拥有多年软件开发经验，专注于Python、PyTorch、计算机视觉等前沿技术领域。我们深信，好的工具能够极大地提升效率，改变工作方式，因此我们怀揣着对编程、AI和效率工具的无限热情，不断探索和创造。</p>
+                <p>我们不仅仅是代码的编写者，更是问题的解决者。每一个产品都源于对实际痛点的深刻洞察，力求为用户提供最直接、最有效的解决方案。</p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>我们的理念：匠心、智能、高效</h2>
+            <div class="philosophy-grid">
+                <div class="philosophy-item">
+                    <h3>匠心独运</h3>
+                    <p>我们对待每一个工具都像打磨艺术品一样，注重细节，追求极致的用户体验和代码质量。</p>
+                </div>
+                <div class="philosophy-item">
+                    <h3>智能驱动</h3>
+                    <p>积极拥抱AI和自动化技术，将复杂的算法封装成简单易用的功能，让智能触手可及。</p>
+                </div>
+                <div class="philosophy-item">
+                    <h3>效率至上</h3>
+                    <p>我们的核心目标是帮助用户节省时间，提升工作效率，让您的每一份努力都事半功倍。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>未来展望</h2>
+            <p>飘哥工具箱将持续深耕于智能工具领域，不断推出更多创新产品，涵盖视频处理、图像设计、数据分析、自动化办公等多个方向，逐步构建一个全面的效率工具生态系统。</p>
+            <p>我们期待与您共同成长，也欢迎有共同兴趣的开发者、设计师、创业者进行交流与合作。您的反馈和建议是我们前进的动力！</p>
+            <p class="cta-text">期待您的加入，共同探索科技的无限可能！<a href="/contact.html">立即联系我们 →</a></p>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadComponent('navbar-container', '/components/navbar.html');
+            loadComponent('footer-container', '/components/footer.html');
+        });
+    </script>
+</body>
+</html>

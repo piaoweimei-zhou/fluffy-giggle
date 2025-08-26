@@ -1,0 +1,16 @@
+<nav class="navbar">
+    <div class="nav-brand">
+        <a href="/index.html">
+            <img src="/assets/images/logos/your-logo.png" alt="网站Logo" height="40">
+            <span>飘哥工具箱</span>
+        </a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="/index.html">首页</a></li>
+        <li><a href="/categories.html">所有工具</a></li>
+        <li><a href="/blog.html">教程博客</a></li>
+        <li><a href="/about.html">关于我们</a></li>
+        <li><a href="/contact.html">联系我们</a></li>
+    </ul>
+    
+</nav>

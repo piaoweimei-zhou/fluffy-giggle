@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <script src="/js/load-component.js"></script>
+    <title>视频智能分镜工具 - 飘哥工具箱</title>
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <main class="product-detail-page">
+        <section class="product-hero">
+            <div class="product-header">
+                <h1>视频智能分镜工具</h1>
+                <p class="slogan">告别手动抽帧，AI助您秒速洞察视频精华！</p>
+                <div class="features-list">
+                    <span>✅ GPU/CPU 自动切换</span>
+                    <span>✅ 智能多策略融合</span>
+                    <span>✅ GUI 可视化界面</span>
+                    <span>✅ 一键打包EXE</span>
+                </div>
+            </div>
+            <div class="product-media">
+                <img src="/assets/images/products/video-splitter-main.png" alt="视频智能分镜工具主图" class="main-product-image">
+                <!-- 建议此处放置一个工具操作的演示GIF或B站/Youtube视频链接 -->
+                <!-- <iframe width="100%" height="400" src="https://player.bilibili.com/player.html?aid=XXXX&bvid=XXXX&cid=XXXX&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe> -->
+            </div>
+        </section>
+
+        <section class="problem-solution">
+            <h2>您的痛点，我们解决！</h2>
+            <div class="solution-item">
+                <h3>🎥 视频关键帧提取难度大？</h3>
+                <p>普通用户缺乏图像处理知识，难以通过`ffmpeg`等命令行工具智能筛选出真正有意义的分镜。传统方法效率低下且结果不理想。</p>
+                <p><strong>解决方案：</strong> 本工具独家融合 **SSIM（结构相似性）、MSE（均方误差）和pHash（感知哈希）** 多种高级图像相似度计算方法。AI自动分析画面内容变化，为您精准筛选高信息量关键帧，解放您的双手。</p>
+            </div>
+            <div class="solution-item">
+                <h3>⏳ 长镜头信息过于稀疏？</h3>
+                <p>视频中长时间的静态或微小变化的镜头，传统抽帧方式可能导致关键信息遗漏，无法全面概览内容。</p>
+                <p><strong>解决方案：</strong> 提供 `maxFrames` 参数，允许您自定义长镜头内分帧的最大数量。在保持内容精度的同时，避免冗余，让关键信息无所遁形。</p>
+            </div>
+            <div class="solution-item">
+                <h3>✂️ 孤立帧与转场噪声干扰？</h3>
+                <p>视频转场或偶然噪声往往会生成多余的、无意义的“假”关键帧，增加后期筛选和处理负担。</p>
+                <p><strong>解决方案：</strong> `mergeInterFrames` 参数能够智能合并相近的孤立帧。有效去除转场噪声和冗余信息，确保您的分镜集更纯净、更聚焦于核心内容。</p>
+            </div>
+        </section>
+
+        <section class="technical-details">
+            <h2>核心技术，硬核支撑</h2>
+            <div class="tech-stack-grid">
+                <div class="tech-item">
+                    <h3>PyTorch (torch)</h3>
+                    <p>强大的深度学习框架，实现GPU/CPU运行环境自动检测与切换，并提供图像处理（相似度计算的张量支持）的底层算力加速。</p>
+                </div>
+                <div class="tech-item">
+                    <h3>OpenCV (cv2)</h3>
+                    <p>业界领先的开源计算机视觉库，负责视频的快速解码、逐帧读取，以及图像的缩放、DCT变换（感知哈希pHash的核心）。</p>
+                </div>
+                <div class="tech-item">
+                    <h3>NumPy</h3>
+                    <p>Python科学计算的核心库，为SSIM、MSE、pHash等相似度指标的数值计算提供高效的矩阵运算支持。</p>
+                </div>
+                <div class="tech-item">
+                    <h3>PyQt5</h3>
+                    <p>打造直观、响应迅速的图形用户界面（GUI），提供用户友好的参数调节和文件选择对话框，让复杂功能一目了然。</p>
+                </div>
+                <div class="tech-item">
+                    <h3>PyInstaller</h3>
+                    <p>跨平台打包工具，将工具封装为独立的Windows单文件EXE，极大简化了用户的安装和使用流程，实现“开箱即用”。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="applicable-scenarios">
+            <h2>🎯 适用场景</h2>
+            <ul>
+                <li>**影视从业者/剪辑师：** 快速浏览大量素材，高效生成分镜参考，加速前期准备。</li>
+                <li>**二次内容创作者：** 动漫MAD、游戏剪辑、短视频制作等，精准提取视频高光时刻，提升后期加工效率。</li>
+                <li>**AI 应用开发者：** 作为计算机视觉、视频理解、图像生成等AI模型的优质输入帧集，构建高质量训练数据集。</li>
+                <li>**教学/演示人员：** 轻松分析视频内容结构，辅助制作演示材料或课程分镜。</li>
+                <li>**个人用户：** 希望拥有一个操作简单、功能强大的视频关键帧提取工具，告别繁琐命令行。</li>
+            </ul>
+        </section>
+
+        <section class="tool-comparison">
+            <h2>与市面工具对比</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>工具</th>
+                        <th>功能</th>
+                        <th>优势</th>
+                        <th>劣势</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>**FFmpeg**</td>
+                        <td>视频分割 / 抽帧</td>
+                        <td>- 轻量级<br>- 命令行支持强大</td>
+                        <td>- 不智能，只能按固定间隔抽帧<br>- 无 GUI</td>
+                    </tr>
+                    <tr>
+                        <td>**Adobe Premiere / PR**</td>
+                        <td>专业视频编辑</td>
+                        <td>- 功能强大<br>- 精确手工操作</td>
+                        <td>- 学习成本高<br>- 收费且体积庞大</td>
+                    </tr>
+                    <tr>
+                        <td>**DaVinci Resolve**</td>
+                        <td>调色+剪辑+分镜</td>
+                        <td>- 专业影视后期标准</td>
+                        <td>- 学习曲线陡峭<br>- 安装复杂</td>
+                    </tr>
+                    <tr>
+                        <td>**本项目 (Extract Storyboards App)**</td>
+                        <td>**智能分镜提取**</td>
+                        <td>- **核心优势：智能关键帧提取**（SSIM/MSE/pHash）<br>- **GUI 参数可调节**<br>- **CPU/GPU 自适应**<br>- 可 **一键打包为 EXE**</td>
+                        <td>- 功能相对单一（专注关键帧提取）<br>- 不适合复杂视频剪辑</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="how-to-get">
+            <h2>🚀 立即获取【视频智能分镜工具】！</h2>
+            <p>享受智能带来的高效与便捷，让您的视频工作事半功倍！</p>
+            <div class="purchase-options">
+                <div class="purchase-channel">
+                    <h3>咸鱼店铺</h3>
+                    <p>点击下方链接，或扫描二维码直接前往购买。</p>
+                    <a href="您的咸鱼商品链接" target="_blank" class="buy-button">前往咸鱼购买 →</a>
+                    <img src="/assets/images/downloads/xianyu_qr.png" alt="咸鱼购买二维码" class="qr-code">
+                    <p class="note">咸鱼交易更灵活，可直接与作者沟通。</p>
+                </div>
+                <div class="purchase-channel">
+                    <h3>淘宝店铺</h3>
+                    <p>点击下方链接，或扫描二维码直接前往购买。</p>
+                    <a href="您的淘宝商品链接" target="_blank" class="buy-button">前往淘宝购买 →</a>
+                    <img src="/assets/images/downloads/taobao_qr.png" alt="淘宝购买二维码" class="qr-code">
+                    <p class="note">淘宝平台更成熟，交易流程更保障。</p>
+                </div>
+            </div>
+            <p class="purchase-flow-hint">购买成功后，我们会通过咸鱼/淘宝平台私信您工具的下载链接及使用授权。如有任何疑问，请通过旺旺/闲聊联系店主。</p>
+            <p class="after-sale"><strong>温馨提示：</strong> 购买后提供一对一售后支持，确保您无忧使用！</p>
+        </section>
+
+        <section class="faq">
+            <h2>常见问题 (FAQ)</h2>
+            <div class="faq-item">
+                <h3>Q1：这款工具支持哪些操作系统？</h3>
+                <p>A1：目前主要支持 **Windows** 操作系统，提供单文件EXE，无需安装Python环境。未来可能会考虑Mac/Linux版本。</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q2：我的电脑没有独立显卡（GPU）可以使用吗？</h3>
+                <p>A2：完全可以！本工具支持GPU/CPU自动切换，没有CUDA显卡会平稳回退到CPU运行，只是处理速度会相对较慢，但功能完全不受影响。</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q3：提取的关键帧输出格式是什么？</h3>
+                <p>A3：通常会输出为高质量的 **PNG 或 JPG 图像文件**，您可以自行选择保存路径。输出图片质量和压缩比可在GUI中调节。</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q4：购买后如何获取工具和售后支持？</h3>
+                <p>A4：购买成功后，我们会通过咸鱼/淘宝平台私信您工具的下载链接和详细使用教程。售后问题可通过平台消息或本网站<a href="/contact.html">联系我们</a>页面提供的邮箱/微信进行咨询。</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadComponent('navbar-container', '/components/navbar.html');
+            loadComponent('footer-container', '/components/footer.html');
+        });
+    </script>
+</body>
+</html>
